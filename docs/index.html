@@ -1,31 +1,20 @@
 <!DOCTYPE html>
-<link rel="stylesheet" href="style.css">
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Raphaël's Blog</title>
+  <title>Raphaël's Travel Vlog</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
 </head>
 <body>
-  <header>
-    <h1>Welcome to My Blog</h1>
-    <p>By Raphaël Kaiser</p>
-    <nav>
-      <a href="index.html">Home</a> |
-      <a href="about.html">About</a> |
-      <a href="posts.html">Posts</a>
-    </nav>
-  </header>
+  <h1>Travel Timeline</h1>
+  <ul id="timeline"></ul>
 
-  <main>
-    <h2>Latest Posts</h2>
-    <ul>
-      <li><a href="posts/post1.html">First Blog Post</a></li>
-    </ul>
-  </main>
+  <h2>Map of Posts</h2>
+  <div id="map" style="height: 400px;"></div>
 
-  <footer>
-    <p>© 2025 Raphaël Kaiser. All rights reserved.</p>
-  </footer>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="map.js"></script>
 </body>
 </html>
+
