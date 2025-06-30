@@ -21,7 +21,9 @@ h1, h2 {
 }
 
 #map {
+  height: 400px;
   margin-top: 1em;
   border: 1px solid #ccc;
   border-radius: 8px;
 }
+
