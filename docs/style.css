@@ -1,15 +1,16 @@
-body {  
+body {
   font-family: sans-serif;
   max-width: 800px;
   margin: 0 auto;
   padding: 2em;
-  
-  background-image: url("images/sky-lausanne.jpeg"); /* or just "background.jpg" if not in a folder */
+
+  background-image: url("images/sky-lausanne.jpeg");
   background-size: cover;
-  background-repeat: no-repeat;
   background-position: center;
+  background-repeat: no-repeat;
   background-attachment: fixed;
-  color: #fff; /* adjust text if needed */
+
+  color: white;
 }
 
 header, footer {
@@ -23,8 +24,12 @@ nav a {
   color: #3366cc;
 }
 
+
 h1, h2 {
   text-align: center;
+  color: white;
+  font-weight: bold;
+  margin-bottom: 1em;
 }
 
 h1 {
@@ -35,14 +40,36 @@ h1 {
 #map {
   height: 400px;
   margin-top: 1em;
-  border: 1px solid #ccc;
-  border-radius: 8px;
+  border: 2px solid #ffffff55;
+  border-radius: 12px;
+  box-shadow: 0 0 10px #00000088;
 }
 
 p {
   text-align: center;
   color: #555;
   margin-bottom: 2em;
+}
+
+#timeline {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 2em;
+  text-align: center;
+}
+
+#timeline li {
+  margin-bottom: 0.5em;
+}
+
+a {
+  color: #ffeeaa;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #fff;
 }
 
 
