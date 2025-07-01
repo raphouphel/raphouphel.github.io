@@ -1,3 +1,17 @@
+body {  
+  font-family: sans-serif;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2em;
+  
+  background-image: url("images/background.jpg"); /* or just "background.jpg" if not in a folder */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  color: #fff; /* adjust text if needed */
+}
+
 header, footer {
   text-align: center;
   margin-bottom: 2em;
@@ -7,13 +21,6 @@ nav a {
   margin: 0 0.5em;
   text-decoration: none;
   color: #3366cc;
-}
-
-body {
-  font-family: sans-serif;
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 2em;
 }
 
 h1, h2 {
