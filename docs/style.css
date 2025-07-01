@@ -4,7 +4,7 @@ body {
   margin: 0 auto;
   padding: 2em;
   
-  background-image: url("images/background.jpg"); /* or just "background.jpg" if not in a folder */
+  background-image: url("images/sky-lausanne.jpeg"); /* or just "background.jpg" if not in a folder */
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
