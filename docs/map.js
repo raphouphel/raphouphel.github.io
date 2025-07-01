@@ -1,7 +1,11 @@
+// Initialize map variable globally so both fetches can use it
+let map;
+
+// Fetch posts and add markers + timeline
 fetch('data/posts.json')
   .then(response => response.json())
   .then(posts => {
-    const map = L.map('map');
+    map = L.map('map');
 
     // Add map tiles
     L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -27,4 +31,28 @@ fetch('data/posts.json')
     if (bounds.length > 0) {
       map.fitBounds(bounds, { padding: [50, 50] });
     }
+
+    // After posts are loaded and map is ready, load routes
+    fetch('data/routes.json')
+      .then(response => response.json())
+      .then(routes => {
+        routes.forEach(route => {
+          const polyline = L.polyline([route.from, route.to], {
+            color: 'yellow',
+            weight: 4,
+            opacity: 0.7,
+            dashArray: '6, 6'
+          }).addTo(map);
+
+          polyline.bindPopup(route.description);
+
+          // Optional hover effect
+          polyline.on('mouseover', function () {
+            this.setStyle({ weight: 6, color: 'orange' });
+          });
+          polyline.on('mouseout', function () {
+            this.setStyle({ weight: 4, color: 'yellow' });
+          });
+        });
+      });
   });
