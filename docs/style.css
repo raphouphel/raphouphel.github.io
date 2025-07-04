@@ -69,9 +69,7 @@ a:hover {
 }
 
 .overlay {
-  background-color: rgba(0, 0, 0, 0.6); /* semi-transparent dark layer */
-  padding: 2em;
-  border-radius: 12px;
+  background-color: transparent;
 }
 
 
