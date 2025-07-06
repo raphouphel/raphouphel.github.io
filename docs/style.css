@@ -28,9 +28,15 @@ nav a {
 h1, h2 {
   text-align: center;
   color: black;
+  background-color: white;
   font-weight: bold;
   margin-bottom: 1em;
+  border: 2px solid black;
+  padding: 0.5em 1em;
+  border-radius: 8px; /* Optional: adds rounded corners */
+  display: inline-block; /* Keeps border tight around text */
 }
+
 
 
 #map {
