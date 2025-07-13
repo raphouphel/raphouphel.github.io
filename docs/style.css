@@ -89,12 +89,6 @@ a:hover {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Optional shadow */
 }
 
-/* Optional: Improve readability on smaller screens */
-@media (max-width: 600px) {
-  .content-box {
-    padding: 1em;
-    margin: 1em;
-  }
 }
 
 
