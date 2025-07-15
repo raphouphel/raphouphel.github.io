@@ -48,24 +48,32 @@ h1, h2 {
   box-shadow: 0 0 10px #00000088;
 }
 
-
+/* For paragraphs (your existing style) */
 p {
+  color: white; /* Ensures light text */
   text-shadow: 
     0 0 10px black,
-    0 0 5px rgba(0,0,0,0.7); /* Layered shadow */
+    0 0 5px rgba(0, 0, 0, 0.7);
     text-align: center;
     margin-bottom: 2em;
 }
 
+/* For links - match paragraph style + add underline */
 a {
+  color: white !important; /* Forces same color as <p> */
+  text-shadow: 
+    0 0 10px black,
+    0 0 5px rgba(0, 0, 0, 0.7); /* Same shadow as <p> */
   text-decoration: none;
-  border-bottom: 1px solid rgba(255,255,255,0.3);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
+/* Optional: Change link color on hover */
 a:hover {
-  text-decoration: underline;
-  color: #fff;
+  color: #FFFF00 !important; /* Your yellow color */
+  border-bottom-color: #FFFF00;
 }
+
 
 #timeline {
   list-style-type: none;
