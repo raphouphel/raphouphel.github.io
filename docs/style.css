@@ -49,12 +49,26 @@ h1, h2 {
 }
 
 
-p,a {
+p {
   text-shadow: 
     0 0 10px black,
     0 0 5px rgba(0,0,0,0.7); /* Layered shadow */
     text-align: center;
     margin-bottom: 2em;
+}
+
+a {
+  text-shadow: 
+    0 0 10px black,
+    0 0 5px rgba(0,0,0,0.7); /* Layered shadow */
+    text-align: center;
+    margin-bottom: 2em;
+    text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #fff;
 }
 
 #timeline {
@@ -69,10 +83,7 @@ p,a {
 }
 
 
-a:hover {
-  text-decoration: underline;
-  color: #fff;
-}
+
 
 
 
