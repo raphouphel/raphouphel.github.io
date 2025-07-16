@@ -43,7 +43,7 @@ h1, h2 {
 #map {
   height: 400px;
   margin-top: 1em;
-  border: 2px solid #ffffff55;
+  border: 2px solid #000000;
   border-radius: 12px;
   box-shadow: 0 0 10px #00000088;
 }
