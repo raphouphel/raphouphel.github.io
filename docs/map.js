@@ -38,7 +38,7 @@ fetch('data/posts.json')
       .then(routes => {
         routes.forEach(route => {
           const polyline = L.polyline([route.from, route.to], {
-            color: 'yellow',
+            color: 'black',
             weight: 4,
             opacity: 0.7,
             dashArray: '6, 6'
