@@ -50,47 +50,46 @@ h1, h2 {
 
 
 
-/* Default styles (desktop-first) */
-p {
+/* Base styles (mobile-first) */
+p, a {
+  font-size: 1.1rem; /* Default for mobile (~17.6px) */
   color: white;
   text-shadow: 
     0 0 10px black,
     0 0 5px rgba(0, 0, 0, 0.7);
   text-align: center;
+}
+
+p {
   margin-bottom: 2em;
-  font-size: 1.3rem; /* ~21px - comfortable reading size */
 }
 
 a {
-  color: white !important;
-  text-shadow: 
-    0 0 10px black,
-    0 0 5px rgba(0, 0, 0, 0.7);
   text-decoration: none;
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-  font-size: 1.3rem; /* Match paragraph size */
 }
 
-a:hover {
-  color: #FFFF00 !important;
-  border-bottom-color: #FFFF00;
-  /* Remove font-size change on hover - better for mobile */
+/* Desktop scaling */
+@media (min-width: 768px) {
+  p, a {
+    font-size: 1.15rem; /* Slightly larger (~18.4px) */
+  }
 }
 
-
-/* Mobile adjustments (after main styles) */
-@media (max-width: 600px) {
+/* Large screens */
+@media (min-width: 1200px) {
   p, a {
-    font-size: 1.1rem; /* ~18px - slightly smaller for mobile */
+    font-size: 1.2rem; /* Optimal reading size (~19.2px) */
   }
-  
-  /* Optional: Reduce text shadow intensity on small screens */
-  p, a {
-    text-shadow: 
-      0 0 5px black,
-      0 0 3px rgba(0, 0, 0, 0.7);
-  }
+}
 
+/* Hover effects (desktop only) */
+@media (hover: hover) {
+  a:hover {
+    color: #FFFF00 !important;
+    border-bottom-color: #FFFF00;
+  }
+}
 
 #timeline {
   list-style-type: none;
