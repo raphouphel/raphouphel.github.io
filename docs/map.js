@@ -48,7 +48,7 @@ fetch('data/posts.json')
 
           // Optional hover effect
           polyline.on('mouseover', function () {
-            this.setStyle({ weight: 6, color: 'orange' });
+            this.setStyle({ weight: 6, color: 'yellow' });
           });
           polyline.on('mouseout', function () {
             this.setStyle({ weight: 4, color: 'yellow' });
