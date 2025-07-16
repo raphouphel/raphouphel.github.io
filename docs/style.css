@@ -48,31 +48,48 @@ h1, h2 {
   box-shadow: 0 0 10px #00000088;
 }
 
-/* For paragraphs (your existing style) */
+
+
+/* Default styles (desktop-first) */
 p {
-  color: white; /* Ensures light text */
+  color: white;
   text-shadow: 
     0 0 10px black,
     0 0 5px rgba(0, 0, 0, 0.7);
-    text-align: center;
-    margin-bottom: 2em;
+  text-align: center;
+  margin-bottom: 2em;
+  font-size: 1.3rem; /* ~21px - comfortable reading size */
 }
 
-/* For links - match paragraph style + add underline */
 a {
-  color: white !important; /* Forces same color as <p> */
+  color: white !important;
   text-shadow: 
     0 0 10px black,
-    0 0 5px rgba(0, 0, 0, 0.7); /* Same shadow as <p> */
+    0 0 5px rgba(0, 0, 0, 0.7);
   text-decoration: none;
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  font-size: 1.3rem; /* Match paragraph size */
 }
 
-/* Optional: Change link color on hover */
 a:hover {
-  color: #FFFF00 !important; /* Your yellow color */
+  color: #FFFF00 !important;
   border-bottom-color: #FFFF00;
+  /* Remove font-size change on hover - better for mobile */
 }
+
+
+/* Mobile adjustments (after main styles) */
+@media (max-width: 600px) {
+  p, a {
+    font-size: 1.1rem; /* ~18px - slightly smaller for mobile */
+  }
+  
+  /* Optional: Reduce text shadow intensity on small screens */
+  p, a {
+    text-shadow: 
+      0 0 5px black,
+      0 0 3px rgba(0, 0, 0, 0.7);
+  }
 
 
 #timeline {
