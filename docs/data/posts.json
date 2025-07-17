@@ -11,6 +11,7 @@
     "date": "29-06-2025",
     "lat": 46.5196535,
     "lon": 6.6322734
+    "url": "posts/29-06-2025.html"
   },
   {
     "title": "Marseille caniculaire",
@@ -18,7 +19,12 @@
     "lat": 43.3,
     "lon": 5.4,
     "url": "posts/02-07-2025.html"
+  },
+  {
+    "title": "Shopping à Zurich",
+    "date": "08-07-2025",
+    "lat": 47.3769,
+    "lon": 8.5417,
+    "url": "posts/08-07-2025.html"
   }
-
-
 ]
