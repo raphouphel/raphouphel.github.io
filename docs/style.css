@@ -28,33 +28,34 @@ nav a {
 h1, h2 {
   text-align: center;
   color: black;
-  background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white */
+  background-color: rgba(255, 255, 255, 0.85); /* More transparent */
   font-weight: bold;
   margin: 0 auto 1.5em auto;
   border: 2px solid black;
-  padding: 0.6em 1.2em; /* Slightly more padding */
-  border-radius: 12px; /* Softer rounded corners */
+  border-top: 4px solid #FFD700; /* Golden top border */
+  padding: 0.7em 1.4em;
+  border-radius: 12px;
   display: block;
   width: fit-content;
-  box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-  transition: all 0.3s ease; /* Smooth hover effects */
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1); /* Smooth bounce effect */
 }
 
-/* Hover state for interactivity */
+/* Dramatic hover effect */
 h1:hover, h2:hover {
-  transform: translateY(-2px); /* Slight lift */
-  box-shadow: 6px 6px 0 rgba(0, 0, 0, 0.15);
+  transform: translateY(-5px) scale(1.02); /* Bigger lift + slight zoom */
+  box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.15);
+  background-color: rgba(255, 255, 255, 0.95); /* Slightly less transparent on hover */
 }
 
-/* Differentiate h1 and h2 slightly */
+/* Differentiate h1 (more emphasis) */
 h1 {
-  font-size: 2.2rem;
-  letter-spacing: -0.5px; /* Tighter letter spacing for large text */
+  font-size: 2.4rem;
+  border-top-width: 6px; /* Thicker gold bar */
 }
 
 h2 {
-  font-size: 1.8rem;
-  border-width: 1.5px; /* Thinner border for hierarchy */
+  font-size: 1.9rem;
 }
 
 
