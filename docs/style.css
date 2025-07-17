@@ -31,8 +31,7 @@ h1, h2 {
   background-color: rgba(255, 255, 255, 0.85); /* More transparent */
   font-weight: bold;
   margin: 0 auto 1.5em auto;
-  border: 2px solid black;
-  border-top: 4px solid #FFD700; /* Golden top border */
+  border: 3px solid #FFD700;
   padding: 0.7em 1.4em;
   border-radius: 12px;
   display: block;
