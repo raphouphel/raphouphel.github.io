@@ -10,5 +10,11 @@
     "to": [43.3, 5.4],
     "date": "02-07-2025",
     "description": "<strong>🚆 Train de Lausanne à Marseille</strong><br>"
+  },
+  {
+    "from": [46.519, 6.632],
+    "to": [47.3769, 8.5417],
+    "date": "08-07-2025",
+    "description": "<strong>🚆 Train de Lausanne à Zürich</strong><br>"
   }
 ]
