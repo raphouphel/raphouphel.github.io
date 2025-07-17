@@ -28,14 +28,33 @@ nav a {
 h1, h2 {
   text-align: center;
   color: black;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white */
   font-weight: bold;
-  margin: 0 auto 1em auto; /* Top and bottom 0, left and right auto */
+  margin: 0 auto 1.5em auto;
   border: 2px solid black;
-  padding: 0.5em 1em;
-  border-radius: 8px;
-  display: block; /* Change to block for margin: auto to work */
-  width: fit-content; /* Makes element only as wide as its content */
+  padding: 0.6em 1.2em; /* Slightly more padding */
+  border-radius: 12px; /* Softer rounded corners */
+  display: block;
+  width: fit-content;
+  box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: all 0.3s ease; /* Smooth hover effects */
+}
+
+/* Hover state for interactivity */
+h1:hover, h2:hover {
+  transform: translateY(-2px); /* Slight lift */
+  box-shadow: 6px 6px 0 rgba(0, 0, 0, 0.15);
+}
+
+/* Differentiate h1 and h2 slightly */
+h1 {
+  font-size: 2.2rem;
+  letter-spacing: -0.5px; /* Tighter letter spacing for large text */
+}
+
+h2 {
+  font-size: 1.8rem;
+  border-width: 1.5px; /* Thinner border for hierarchy */
 }
 
 
