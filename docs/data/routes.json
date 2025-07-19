@@ -16,5 +16,11 @@
     "to": [47.3769, 8.5417],
     "date": "08-07-2025",
     "description": "<strong>🚆 Train de Lausanne à Zürich</strong><br>"
+  },
+  {
+    "from": [47.3769, 8.5417],
+    "to": [22.3193, 114.1694],
+    "date": "10-07-2025",
+    "description": "<strong>✈️ Avion de Zürich à Hong Kong</strong><br>"
   }
 ]
