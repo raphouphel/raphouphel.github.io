@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Vue sur la mer</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <h1>Vue sur la mer</h1>
+  
+  <p>11 Juillet</p>
+
+  
+  <p>Premier réveil (un peu difficile) à HKUST. Mi-reveillé, j'appercois depuis la cuisine la mer et les montagnes, je suis fan.</p>
+
+  <img src="../images/posts/IMG_8506.jpeg" style="max-width: 100%; border-radius: 8px; margin: 1em 0;">
+  <img src="../images/posts/IMG_8509.jpeg" style="max-width: 100%; border-radius: 8px; margin: 1em 0;">
+      
+  <p>Aujourd'hui nous participons un petit programme d'orientation préparé par l'université. Nous visitons le campus et achetons des draps et des ustensiles de cuisine dans une friperie organisée par l'uni.</p>
+  
+  <img src="../images/posts/IMG_8510.jpeg" style="max-width: 100%; border-radius: 8px; margin: 1em 0;">
+  <img src="../images/posts/IMG_8513.jpeg" style="max-width: 100%; border-radius: 8px; margin: 1em 0;">
+  <img src="../images/posts/IMG_8515.jpeg" style="max-width: 100%; border-radius: 8px; margin: 1em 0;">
+  <img src="../images/posts/IMG_8521.jpeg" style="max-width: 100%; border-radius: 8px; margin: 1em 0;">
+  <img src="../images/posts/IMG_8523.jpeg" style="max-width: 100%; border-radius: 8px; margin: 1em 0;">
+
+  <a href="../index.html">← Retour</a>
+
+</body>
+
+</html>
