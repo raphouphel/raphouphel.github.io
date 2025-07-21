@@ -60,18 +60,11 @@ h2 {
 
 
 #map {
-  height: 500px; /* Better than inline style */
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-  margin-top: 1rem;
-  border: 2px solid #FFD700; /* Matching your theme */
-}
-
-/* Make sure map container is visible */
-.travel-map {
-  max-width: 1200px;
-  margin: 3rem auto;
-  padding: 0 1rem;
+  height: 400px;
+  margin-top: 1em;
+  border: 2px solid #000000;
+  border-radius: 12px;
+  box-shadow: 0 0 10px #00000088;
 }
 
 
@@ -211,7 +204,6 @@ a {
 }
 
 /* oooooooooooooooooooooooooo */
-
 
 
 
