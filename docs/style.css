@@ -164,8 +164,12 @@ a {
 
 .post-image {
   height: 180px;
+  width: 100%; /* Ensures full card width */
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat; /* Prevent repeating */
+  border-top-left-radius: 8px; /* Match card radius */
+  border-top-right-radius: 8px;
   transition: transform 0.3s ease;
 }
 
