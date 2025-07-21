@@ -16,36 +16,15 @@
 
      
       <!-- ooooooooooooooooooooooo    <h2 class="section-title">Posts</h2> -->
-  <section class="featured-posts">
-    <h2>Posts</h2>
-    <div class="post-grid">
-      <!-- These would be dynamically generated from your posts -->
-      <a href="../posts/11-07-2025.html" class="post-card">
-        <div class="post-image" style="background-image: url('../images/posts/IMG_8510.jpeg')"></div>
-        <h3>Vue sur la mer</h3>
-      </a>
-      <a href="../posts/10-07-2025.html" class="post-card">
-        <div class="post-image" style="background-image: url('../images/posts/IMG_8693.jpeg')"></div>
-        <h3>Hong Kong j'arrive!!</h3>
-      </a>
-      <a href="../posts/08-07-2025.html" class="post-card">
-        <div class="post-image" style="background-image: url('../images/posts/IMG_3320.jpeg')"></div>
-        <h3>Shopping à Zurich</h3>
-      </a>
-      <a href="../posts/02-07-2025.html" class="post-card">
-        <div class="post-image" style="background-image: url('../images/posts/43FC38F8-C5C0-40B6-94AF-4431B20E26B1.jpeg')"></div>
-        <h3>Marseille caniculaire</h3>
-      </a>
-      <a href="../posts/29-06-2025.html" class="post-card">
-        <div class="post-image" style="background-image: url('../images/posts/IMG_8245.jpeg')"></div>
-        <h3>Fini le Danemark</h3>
-      </a>
-      <a href="../posts/27-06-2025.html" class="post-card">
-        <div class="post-image" style="background-image: url('../images/posts/camping_lake.jpg')"></div>
-        <h3>Camping sauvage au Danmark</h3>
-      </a>
-    </div>
-  </section>
+<section class="Posts">
+  <h2 class="section-title">All Posts</h2>
+  <ul id="timeline"></ul>
+</section>
+
+<section class="travel-map">
+  <h2 class="section-title">Carte de voyage</h2>
+  <div id="map"></div>
+</section>
 <!-- ooooooooooooooooooooooo  -->
 
     
@@ -54,8 +33,8 @@
     <!-- <ul id="timeline"></ul>  -->
 
 
-    <h2>Carte de voyage</h2>
-    <div id="map" style="height: 400px;"></div>
+        <!-- <h2>Carte de voyage</h2>-->
+        <!-- <div id="map" style="height: 400px;"></div>-->
 
 
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
