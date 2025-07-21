@@ -165,31 +165,27 @@ a {
 
 
 .post-image {
-  height: 100%; /* Changed from 180px to fill card */
-  width: 100%;
+  height: 180px;
+  width: 100%; /* Ensures full card width */
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
-  border-radius: 8px; /* Full rounding instead of just top */
+  background-repeat: no-repeat; /* Prevent repeating */
+  border-top-left-radius: 8px; /* Match card radius */
+  border-top-right-radius: 8px;
   transition: transform 0.3s ease;
 }
 
-.post-card:hover .post-image {
-  transform: scale(1.03); /* Hover effect moved here */
+.post-image {
+  transform: scale(1.03);
 }
 
 .post-card h3 {
-  position: absolute; /* Add this */
-  bottom: 0;
-  left: 0;
-  right: 0;
   padding: 1rem;
-  margin: 0;
-  background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
   font-size: 1.2rem;
   text-align: center;
-  text-shadow: 0 0 5px black;
-  /* Remove padding from original h3 style */
+  text-shadow: 
+    0 0 5px black,
+    0 0 3px rgba(0, 0, 0, 0.7);
 }
 
 
