@@ -162,28 +162,36 @@ a {
   background-color: rgba(0, 0, 0, 0.7);
 }
 
-.post-image {
-  height: 180px;
-  width: 100%; /* Ensures full card width */
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat; /* Prevent repeating */
-  border-top-left-radius: 8px; /* Match card radius */
-  border-top-right-radius: 8px;
-  transition: transform 0.3s ease;
+.post-card {
+  display: flex; /* Changed from block to flex */
+  flex-direction: column;
+  height: 100%; /* Ensure full height */
+  text-decoration: none;
+  color: white;
+  overflow: hidden; /* Keeps everything contained */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
 }
 
-.post-card:hover .post-image {
-  transform: scale(1.03);
+.post-image {
+  flex-grow: 1; /* Takes all available space */
+  min-height: 180px; /* Minimum height */
+  background-size: cover;
+  background-position: center;
+  position: relative; /* For text positioning */
 }
 
 .post-card h3 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
   padding: 1rem;
-  font-size: 1.2rem;
+  margin: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+  color: white;
   text-align: center;
-  text-shadow: 
-    0 0 5px black,
-    0 0 3px rgba(0, 0, 0, 0.7);
 }
 
 /* Responsive adjustments */
