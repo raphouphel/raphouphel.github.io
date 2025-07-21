@@ -37,5 +37,20 @@
       gallery.appendChild(imgWrapper);
     });
   </script>
+
+  // In gallery.html
+fetch('../data/images.json') // Create this JSON file
+  .then(response => response.json())
+  .then(images => {
+    const gallery = document.querySelector('.full-gallery');
+    images.forEach(img => {
+      gallery.innerHTML += `
+        <div class="gallery-item">
+          <img src="${img.path}" alt="${img.description}">
+          <div class="image-overlay"></div>
+        </div>
+      `;
+    });
+  });
 </body>
 </html>
