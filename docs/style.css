@@ -175,7 +175,7 @@ a {
   transition: transform 0.3s ease;
 }
 
-.post-image {
+.post-card:hover .post-image {
   transform: scale(1.03);
 }
 
@@ -187,7 +187,6 @@ a {
     0 0 5px black,
     0 0 3px rgba(0, 0, 0, 0.7);
 }
-
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
