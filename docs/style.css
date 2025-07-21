@@ -147,13 +147,14 @@ a {
 }
 
 .post-card {
+  position: relative; /* Add this */
   text-decoration: none;
   color: white;
   transition: all 0.3s ease;
-  background-color: rgba(0, 0, 0, 0.5);
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  /* Remove background-color from here */
 }
 
 .post-card:hover {
@@ -162,37 +163,35 @@ a {
   background-color: rgba(0, 0, 0, 0.7);
 }
 
-.post-card {
-  display: flex; /* Changed from block to flex */
-  flex-direction: column;
-  height: 100%; /* Ensure full height */
-  text-decoration: none;
-  color: white;
-  overflow: hidden; /* Keeps everything contained */
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  transition: all 0.3s ease;
-}
 
 .post-image {
-  flex-grow: 1; /* Takes all available space */
-  min-height: 180px; /* Minimum height */
+  height: 100%; /* Changed from 180px to fill card */
+  width: 100%;
   background-size: cover;
   background-position: center;
-  position: relative; /* For text positioning */
+  background-repeat: no-repeat;
+  border-radius: 8px; /* Full rounding instead of just top */
+  transition: transform 0.3s ease;
+}
+
+.post-card:hover .post-image {
+  transform: scale(1.03); /* Hover effect moved here */
 }
 
 .post-card h3 {
-  position: absolute;
+  position: absolute; /* Add this */
   bottom: 0;
   left: 0;
   right: 0;
   padding: 1rem;
   margin: 0;
   background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
-  color: white;
+  font-size: 1.2rem;
   text-align: center;
+  text-shadow: 0 0 5px black;
+  /* Remove padding from original h3 style */
 }
+
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
